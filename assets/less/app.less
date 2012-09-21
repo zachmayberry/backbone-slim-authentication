@@ -1,0 +1,88 @@
+/*!
+ * Bootstrap v2.0.4
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// CSS Reset
+@import "reset.less";
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+
+// Base CSS
+@import "type.less";
+@import "code.less";
+@import "forms.less";
+@import "tables.less";
+
+// Components: common
+@import "sprites.less";
+
+// Components: Buttons & Alerts
+@import "buttons.less";
+@import "button-groups.less";
+
+// Components: Misc
+@import "labels-badges.less";
+
+// Components: Alerts
+@import "alerts.less";
+
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary
+
+
+// Auth
+.auth {
+	background: url('http://subtlepatterns.com.s151819.gridserver.com/patterns/linen.png') top left repeat;
+	padding-top: 100px;
+}
+
+.auth {
+	form {
+		background-color: @white;
+		padding: 25px 0 35px;
+		text-align: center;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	}
+
+	input.input-xlarge {
+		font-size: 16px;
+		padding: 8px 10px;
+	}
+
+	button.btn {
+		width: 290px;	
+		margin-top: 9px;
+		font-size: 16px;
+	}
+
+	p.sub {
+		font-size: 18px;
+		margin-top: 3px;
+	}
+
+	p.alt-link {
+		margin-top: 7px;
+	}
+}
+
+#main {
+	text-align: center;
+	padding-top: 20%;
+}
+
+#main .btn {
+	margin-top: 5px;
+}

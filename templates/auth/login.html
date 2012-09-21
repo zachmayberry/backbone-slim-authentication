@@ -1,0 +1,32 @@
+<div class="container">
+<div class="wrapper">
+
+<form class="form-vertical span8 offset2" id="login" action="/auth/process" method="post">
+
+	<h1>Log In</h1>
+
+	<hr />
+
+	<div class="control-group">
+		<div class="controls">
+			<input type="email" name="email" spellcheck="false" placeholder="Email" class="input-xlarge" autofocus />
+		</div>
+	</div>
+
+	<div class="control-group <% if (auth.login_failure) { %>error<% } %>">
+		<div class="controls">
+		<input type="password" name="password" placeholder="Password" class="input-xlarge" />
+	<% if (auth.login_failure) { %>
+	<br />
+		<span class="help-inline">Password is incorrect</span>
+	<% } %>
+		</div>
+	</div>
+
+	<button class="btn btn-primary btn-large">Log In</button>
+	<p class="muted alt-link">New around here? <a href="/#signup">Sign Up</a></p>
+
+</form>
+
+</div>
+</div>
